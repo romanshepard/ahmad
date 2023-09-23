@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница с элементами</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="slick/slick.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+           
+    <div class="container mt-5">
+        <div class="slick______slider">
+            <div><img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1"></div>
+            <div><img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2"></div>
+            <div><img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3"></div>
+        </div>
+    </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 id="dynamicTitle">Новая книга</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="bookTitle">Название книги</label>
+                        <input type="text" class="form-control" id="bookTitle" placeholder="Введите название книги">
+                    </div>
+                    <div class="form-group">
+                        <label for="authorSelect">Выбор автора</label>
+                        <select class="form-control" id="authorSelect">
+                            <option value="">Выберите автора</option>
+                            <option value="Автор 1">Автор 1</option>
+                            <option value="Автор 2">Автор 2</option>
+                           
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="releaseDate">Дата выпуска</label>
+                        <input type="date" class="form-control" id="releaseDate">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="landscapeCheckbox">
+                        <label class="form-check-label" for="landscapeCheckbox">Разворот альбомный книжный</label>
+                    </div>
+                    <button type="button" class="btn btn-primary mt-3" onclick="validateInput()">Сохранить</button>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <h2>Список авторов</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Имя автора</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Автор 1</td>
+                        </tr>
+                        <tr>
+                            <td>Автор 2</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+  
+</body>
+</html>
